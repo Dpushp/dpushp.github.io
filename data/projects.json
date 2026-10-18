@@ -1,0 +1,166 @@
+[
+  {
+    "id": "povnav",
+    "title": "Visual navigation in image space",
+    "theme": "Representation",
+    "status": "Published research",
+    "subtitle": "Pareto-optimal decisions that connect visual perception directly to robot action.",
+    "image": "povnav.png",
+    "image_alt": "Experiments and visual navigation examples from the POVNav paper.",
+    "summary": "POVNav combines semantic understanding, Pareto-optimal decision-making, and visual servoing for navigation in complex environments.",
+    "overview": "This work investigates how a robot can choose useful actions directly in image space. Navigable regions provide a compact representation for balancing progress and exploration without maintaining a global geometric map. The framework connects semantic perception to an interpretable navigation policy.",
+    "contributions": [
+      "A modular image-space navigation framework connecting segmentation, decision-making, and visual control.",
+      "Pareto-optimal decisions that balance navigation objectives.",
+      "Experiments across simulated and physical robotic platforms, including field navigation."
+    ],
+    "related": [
+      "j1",
+      "c7"
+    ],
+    "paper": "https://arxiv.org/abs/2511.07750",
+    "code": "",
+    "video_key": "povnav",
+    "caption": "Figure from Navigating the Wild (Pushp et al., 2025)."
+  },
+  {
+    "id": "miniugv2",
+    "title": "Aerial–ground robots for hidden spaces",
+    "theme": "Embodiment",
+    "status": "Published research",
+    "subtitle": "Complementary robots that extend access, mobility, and manipulation.",
+    "image": "miniugv2.png",
+    "image_alt": "MiniUGV2 and the UAV deployment system described in the paper.",
+    "summary": "MiniUGV₂ combines a UAV-deployable tracked body, articulated arms, sensing, and a magnetic tether interface for confined-space missions.",
+    "overview": "Some missions require both aerial access and ground operation. MiniUGV₂ expands the capabilities of a UAV–ground robot team through a compact tracked platform, articulated arms, integrated sensing, and an attachable magnetic tether interface. The work studies platform design and experimental operation for hidden-space inspection.",
+    "contributions": [
+      "A compact UAV-deployable ground robot with articulated arms and integrated sensing.",
+      "A tether module and electro-permanent magnetic head supporting deployment and optional detachment.",
+      "Physical experiments on mobility, self-righting, and manipulation."
+    ],
+    "related": [
+      "c3",
+      "c9"
+    ],
+    "paper": "https://arxiv.org/abs/2603.00972",
+    "code": "https://github.com/Dpushp/drone-deployable-miniUGV2",
+    "video_key": "miniugv2",
+    "caption": "System figure from MiniUGV₂ (Pushp et al., 2026)."
+  },
+  {
+    "id": "context-policy",
+    "title": "Context-generative default policies",
+    "theme": "Policy",
+    "status": "Published research",
+    "subtitle": "Using predicted context to guide bounded-rational decisions in unknown environments.",
+    "image": "context.png",
+    "image_alt": "Context-generative default policies experimental figure.",
+    "summary": "A diffusion-based map prediction informs a default policy, while local trajectory sampling allows adaptation when predictions are unreliable.",
+    "overview": "A default policy provides a reference for decisions under bounded computation. This work makes that reference responsive to the environment by predicting unseen map regions and using them to generate candidate behavior. Bounded adaptation around that policy helps the robot respond to inaccurate predictions.",
+    "contributions": [
+      "A context-generative default policy informed by observed and predicted map regions.",
+      "Diffusion-based map prediction combined with sampling-based planning.",
+      "Evaluation in simulation and physical Crazyflie drone experiments."
+    ],
+    "related": [
+      "c5"
+    ],
+    "paper": "https://arxiv.org/abs/2409.11604",
+    "code": "",
+    "video_key": "context-policy",
+    "caption": "Experimental image extracted from the associated research paper."
+  },
+  {
+    "id": "racing",
+    "title": "Full-scale autonomous racing",
+    "theme": "Systems",
+    "status": "Published research & ongoing development",
+    "subtitle": "Connecting localization, perception, planning, and control under demanding physical constraints.",
+    "image": "racing.jpg",
+    "image_alt": "IU–Luddy autonomous race car at Las Vegas Motor Speedway.",
+    "summary": "Full-stack autonomy and track experiments at Indianapolis, Las Vegas, Laguna Seca, and Kentucky Motor Speedway.",
+    "overview": "I led the IU–Luddy Autonomous Racing Team from 2023 to 2026, coordinating technical development, integration, mentoring, and track testing. Our work brought together localization, perception, planning, and control on a full-scale racing platform. At Purdue, I contribute to research and development with Purdue AI Racing, including mentoring LiDAR-based localization research.",
+    "contributions": [
+      "Leadership of autonomy-stack development and multidisciplinary system integration at IU.",
+      "IU–Luddy team results including second place at the 2025 LVMS time trial with a 164 mph average and fourth place at Laguna Seca.",
+      "Research on modular racing stacks, localization, and visual autonomy."
+    ],
+    "related": [
+      "c4",
+      "c1",
+      "p1"
+    ],
+    "paper": "https://arxiv.org/abs/2512.06892",
+    "code": "",
+    "video_key": "racing",
+    "caption": "Race-car photograph from From Zero to High-Speed Racing (Jardali et al., 2025)."
+  },
+  {
+    "id": "bounded-drones",
+    "title": "Coordination of bounded-rational drones",
+    "theme": "Policy",
+    "status": "Published research",
+    "subtitle": "Informed prior policies for collective decisions with limited computation.",
+    "image": "drones.png",
+    "image_alt": "Coordination of bounded-rational drones experimental figure.",
+    "summary": "Goal-directed prior policies guide multiple drones as they coordinate motion while considering other agents’ computational constraints.",
+    "overview": "This work studies how useful prior behavior can improve multi-robot coordination when agents cannot evaluate every possible choice. An informed prior policy supplies navigation heuristics, and a bounded-rational game-theoretic framework supports adaptation and coordinated motion.",
+    "contributions": [
+      "A learned, goal-directed prior policy for bounded-rational agents.",
+      "Integration with a game-theoretic multi-agent planning framework.",
+      "Simulation and physical experiments with multiple drones."
+    ],
+    "related": [
+      "c8",
+      "c10"
+    ],
+    "paper": "https://arxiv.org/abs/2307.15798",
+    "code": "",
+    "video_key": "bounded-drones",
+    "caption": "Experimental image extracted from the associated research paper."
+  },
+  {
+    "id": "hybrid-system",
+    "title": "UAV–miniUGV hybrid exploration",
+    "theme": "Embodiment",
+    "status": "Published research",
+    "subtitle": "Aerial access with ground exploration and manipulation.",
+    "image": "hybrid.png",
+    "image_alt": "UAV–miniUGV hybrid exploration experimental figure.",
+    "summary": "A UAV transports a miniature ground robot that enters narrow spaces, searches for objects, and returns for retrieval.",
+    "overview": "The UAV–miniUGV system combines complementary physical capabilities to reach and inspect spaces that neither robot can fully address alone. A tethered miniature ground robot extends the UAV’s operational reach into confined areas and supports object search and manipulation.",
+    "contributions": [
+      "A heterogeneous aerial–ground platform with a deployable miniature robot.",
+      "An autonomy pipeline for confined-space search, manipulation, and return.",
+      "Physical experiments demonstrating the combined system."
+    ],
+    "related": [
+      "c9"
+    ],
+    "paper": "https://arxiv.org/abs/2209.11704",
+    "code": "",
+    "video_key": "hybrid-system",
+    "caption": "Experimental image extracted from the associated research paper."
+  },
+  {
+    "id": "embodiment-search",
+    "title": "Search over embodiments",
+    "theme": "Embodiment",
+    "status": "Ongoing research",
+    "subtitle": "Recognizing when a robot’s physical capabilities are insufficient for its task.",
+    "image": "",
+    "image_alt": "",
+    "summary": "An emerging research direction on diagnosing embodiment limitations and reasoning about physical adaptation under bounded resources.",
+    "overview": "A failed task may reflect inadequate sensing, mobility, actuation, energy, representation, or strategy. My ongoing research asks how a robot can distinguish these causes and reason about changes to its embodiment within limits on information, computation, and intervention cost. This is a research direction, rather than a completed autonomous redesign system.",
+    "contributions": [
+      "Task-dependent diagnosis of physical capability limitations.",
+      "Coupled reasoning over embodiment, representation, and policy.",
+      "Resource-aware evaluation of candidate physical adaptations."
+    ],
+    "related": [],
+    "paper": "",
+    "code": "",
+    "video_key": "embodiment-search",
+    "caption": ""
+  }
+]

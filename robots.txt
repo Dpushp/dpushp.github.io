@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dpushp.github.io/sitemap.xml
